@@ -1,0 +1,14 @@
+1. SELECT COUNT(Imie) FROM `klienci`;
+
+2.SELECT klienci.Imie, klienci.Nazwisko, klienci.Id, zamowienia.kod_koloru, zamowienia.pojemnosc, zamowienia.data_odbioru 
+FROM `klienci` 
+JOIN zamowienia ON zamowienia.id_klienta = klienci.Id 
+ORDER BY zamowienia.data_odbioru ASC;
+
+3.SELECT klienci.Nazwisko, klienci.Imie, klienci.Id, zamowienia.kod_koloru, zamowienia.pojemnosc, zamowienia.data_odbioru 
+FROM `klienci` 
+JOIN zamowienia ON zamowienia.id_klienta = klienci.Id
+WHERE zamowienia.data_odbioru BETWEEN "2021-11-05" AND "2021-11-07" 
+ORDER BY zamowienia.data_odbioru ASC;
+
+4.SELECT Imie, Nazwisko FROM `klienci` WHERE Plec = "k";

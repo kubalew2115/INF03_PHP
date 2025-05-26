@@ -1,0 +1,43 @@
+*{
+    font-family: Helvetica;
+}
+body{
+    background-color: lightsalmon;
+    text-align: center;
+}
+aside{
+    width: 30%;
+    height: 400px;
+    float: left;
+}
+footer{
+    background-color: darksalmon;
+    width: 30%;
+    height: 100px;
+    float: left;
+}
+main{
+    background-color: darksalmon;
+    width: 70%;
+    height: 500px;
+    overflow: auto;
+    float: left;
+}
+img{
+    width: 100%;
+}
+#na{
+    font-size: 200%;
+    padding: 10px;
+    font-style: italic;
+}
+#na:hover{
+    color: ghostwhite;
+}
+table, td{
+    border: 1px dotted Maroon;
+}
+table{
+    width: 70%;
+    margin: auto;
+}

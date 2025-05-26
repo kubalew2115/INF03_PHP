@@ -1,0 +1,7 @@
+1. SELECT id, nazwa, opis, zdjecie FROM `produkty` WHERE id = "18" OR id = "22" OR id = "23" OR id = "25";
+
+2. SELECT id, nazwa, opis, zdjecie FROM `produkty` WHERE Rodzaje_id = "12";
+
+3. SELECT produkty.nazwa, rodzaje.nazwa FROM `produkty` JOIN rodzaje ON rodzaje.id = produkty.Rodzaje_id;
+
+4. DELETE FROM produkty WHERE produkty.id = 15;
